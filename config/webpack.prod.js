@@ -205,6 +205,10 @@ module.exports = function (env) {
         debug: false,
         options: {
 
+          fileLoader: {
+            name: '[hash].[ext]'
+          },
+
           /**
            * Static analysis linter for TypeScript advanced options configuration
            * Description: An extensible linter for the TypeScript language.

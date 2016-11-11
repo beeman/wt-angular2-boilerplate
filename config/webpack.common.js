@@ -102,7 +102,6 @@ module.exports = function (options) {
         {
           test: /\.ts$/,
           loaders: [
-            '@angularclass/hmr-loader?pretty=' + !isProd + '&prod=' + isProd,
             'awesome-typescript-loader',
             'angular2-template?keepUrl=true'
           ],
@@ -149,14 +148,14 @@ module.exports = function (options) {
          */
         {
           test: /\.async\.html$/,
-          loaders: ['file?name=[name].[hash].[ext]', 'extract', 'html']
+          loaders: ['file', 'extract', 'html']
         },
 
         /* File loader for supporting images, for example, in CSS files.
          */
         {
           test: /\.(jpg|png|gif)$/,
-          loader: 'file'
+          loader: 'file?name=[path][name].[ext]'
         },
 
       ],

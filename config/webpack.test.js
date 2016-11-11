@@ -228,6 +228,11 @@ module.exports = function (options) {
         debug: true,
         options: {
 
+          fileLoader: {
+              context: 'src',
+              name: '[path][name].[ext]'
+          },
+
           /**
            * Static analysis linter for TypeScript advanced options configuration
            * Description: An extensible linter for the TypeScript language.

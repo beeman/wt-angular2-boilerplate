@@ -205,6 +205,10 @@ module.exports = function (env) {
         debug: false,
         options: {
 
+          angular2TemplateLoader: {
+              keepUrl: true
+          },
+
           fileLoader: {
             name: '[hash].[ext]'
           },

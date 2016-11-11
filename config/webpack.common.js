@@ -103,7 +103,7 @@ module.exports = function (options) {
           test: /\.ts$/,
           loaders: [
             'awesome-typescript-loader',
-            'angular2-template?keepUrl=true'
+            'angular2-template'
           ],
           exclude: [/\.(spec|e2e)\.ts$/]
         },

@@ -124,6 +124,10 @@ module.exports = function (options) {
         debug: true,
         options: {
 
+          angular2TemplateLoader: {
+              keepUrl: true
+          },
+
           fileLoader: {
               context: 'src',
               name: '[path][name].[ext]'

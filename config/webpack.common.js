@@ -36,6 +36,8 @@ const METADATA = {
  */
 module.exports = function (options) {
 
+  let env = options.env;
+
   return {
 
     /*
@@ -246,6 +248,7 @@ module.exports = function (options) {
        * See: https://github.com/ampedandwired/html-webpack-plugin
        */
       new HtmlWebpackPlugin({
+        env: env,
         template: 'src/index.html',
         title: METADATA.title,
         chunksSortMode: 'dependency',

@@ -36,10 +36,6 @@ const METADATA = {
  */
 module.exports = function (options) {
 
-  let env = options.env;
-
-  isProd = options.env === 'production';
-
   return {
 
     /*
@@ -169,7 +165,7 @@ module.exports = function (options) {
          */
         {
           test: /\.async\.html$/,
-          use: ['file', 'extract', 'html']
+          use: ['file-loader', 'extract-loader', 'html-loader']
         },
 
         /* File loader for supporting images, for example, in CSS files.
@@ -250,7 +246,6 @@ module.exports = function (options) {
        * See: https://github.com/ampedandwired/html-webpack-plugin
        */
       new HtmlWebpackPlugin({
-        env: env,
         template: 'src/index.html',
         title: METADATA.title,
         chunksSortMode: 'dependency',

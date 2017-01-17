@@ -1,16 +1,15 @@
 /*
  * Angular 2 decorators and services
  */
-import { Component, ViewEncapsulation } from '@angular/core';
 
-import { AppState } from './app.service';
+import { Component, ViewEncapsulation } from '@angular/core';
 
 /*
  * App Component
  * Top Level Component
  */
 @Component({
-    selector: 'app',
+    selector: 'wt-app',
     encapsulation: ViewEncapsulation.None,
     styles: [
         require('./app.component.css')
@@ -18,5 +17,4 @@ import { AppState } from './app.service';
     template: require('./app.component.html')
 })
 export class AppComponent {
-
 }

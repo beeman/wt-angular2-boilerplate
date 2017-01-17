@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
+
 /*
  * Platform and Environment providers/directives/pipes
  */
@@ -8,12 +9,16 @@ import { ROUTES } from './app.routes';
 import { AppComponent } from './app.component';
 import { HelloModule } from './hello/hello.module';
 import { SharedModule } from './shared.module';
+import { HomeComponent } from './home';
+import { AboutComponent } from './about';
+import { NoContentComponent } from './no-content';
+import { XLargeDirective } from './home/x-large';
 
 /**
  * `AppModule` is the main entry point into Angular2's bootstraping process
  */
 @NgModule({
-    bootstrap: [AppComponent],
+    bootstrap: [ AppComponent ],
     /* Module's Components / Directives / Pipes. */
     declarations: [
         AppComponent
@@ -31,4 +36,3 @@ import { SharedModule } from './shared.module';
 })
 export class AppModule {
 }
-

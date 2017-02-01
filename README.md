@@ -23,6 +23,8 @@ ___
 
 # Angular2 Webpack Starter [![Join Slack](https://img.shields.io/badge/slack-join-brightgreen.svg)](https://angularclass.com/slack-join) [![Join the chat at https://gitter.im/angularclass/angular2-webpack-starter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/angularclass/angular2-webpack-starter?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/wishtack/wt-angular2-boilerplate.svg)](https://greenkeeper.io/)
+
 
 > An Angular 2 starter kit featuring [Angular 2](https://angular.io) and [Angular 4](https://github.com/angular/angular/tree/4.0.0-beta.0) ([Ahead of Time Compile](https://angular.io/docs/ts/latest/cookbook/aot-compiler.html), [Router](https://angular.io/docs/ts/latest/guide/router.html), [Forms](https://angular.io/docs/ts/latest/guide/forms.html),
 [Http](https://angular.io/docs/ts/latest/guide/server-communication.html),
@@ -347,8 +349,6 @@ import * as _ from 'lodash';
  * see wiki [How-do-I-async-load-a-component-with-AsyncRoute](https://github.com/AngularClass/angular2-webpack-starter/wiki/How-do-I-async-load-a-component-with-AsyncRoute)
 * Error: Cannot find module 'tapable'
  * Remove `node_modules/` and run `npm cache clean` then `npm install`
-* What about Webpack 2?
- * If you're looking for Webpack 2 version then see the [experimental version](https://github.com/gdi2290/angular2-webpack2-starter) that will be merged soon.
 * How do I turn on Hot Module Replacement
  * Run `npm run server:dev:hmr`
 * `RangeError: Maximum call stack size exceeded`

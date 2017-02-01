@@ -164,7 +164,6 @@ module.exports = function (options) {
             '@angular/forms',
             '@angular/http',
             '@angular/router',
-            '@angularclass/hmr',
             'rxjs',
           ]
         },
@@ -212,19 +211,7 @@ module.exports = function (options) {
           fileLoader: {
               context: 'src',
               name: '[path][name].[ext]'
-          },
-
-          /**
-           * Static analysis linter for TypeScript advanced options configuration
-           * Description: An extensible linter for the TypeScript language.
-           *
-           * See: https://github.com/wbuchwalter/tslint-loader
-           */
-          tslint: {
-            emitErrors: false,
-            failOnHint: false,
-            resourcePath: 'src'
-          },
+          }
 
         }
       }),
